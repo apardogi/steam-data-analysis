@@ -10,4 +10,4 @@ La pràctica ha estat desenvolupada individualment per l'alumne Andrés Pardo Gi
 
 ## Contingut
 
-El contingut de la pràctica està descrit al fitxer anomenat informe_pr2t.pdf sota la carpeta /pdf. Per problemes tècnics amb el *plugin* de LaTeX no hem aconseguit convertir el jupyer-notebook directament a pdf i hem hagut de primer passar-ho a format html i imprimir-ho com a pdf fent servir l'html com a base. Per tant aconsellem la seva visualització en format html on es pot interactuar amb les taules de dades fàcilment. 
+El contingut de la pràctica està descrit al fitxer anomenat informe_pr2t.pdf sota la carpeta /pdf. Per problemes tècnics amb el *plugin* de LaTeX no hem aconseguit convertir el jupyer-notebook directament a pdf i hem hagut de primer passar-ho a format html i imprimir-ho com a pdf fent servir l'html com a base. Per tant aconsellem la seva visualització en format html o al jupyter-notebook original ja que en d'ambdós maneres es pot interactuar amb les taules de dades fàcilment. 

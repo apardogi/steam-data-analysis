@@ -11779,39 +11779,8 @@ div#notebook {
 <p>Per obtenir més detalls sobre el procés d'obtenció i neteja de les dades originals hem fet servir com a referència diversos missatges que el creador va pujar al seu blog personal. L'enllaç als mateixos és aquí: <a href="https://nik-davis.github.io/tag/steam.html">https://nik-davis.github.io/tag/steam.html</a></p>
 <p>Així les dades que hem tractat són les provinents del fitxer "steam.csv".</p>
 <p>Al primer missatge del seu blog sobre el set de dades: <a href="https://nik-davis.github.io/posts/2019/steam-data-collection/">https://nik-davis.github.io/posts/2019/steam-data-collection/</a> Aquí l'autor ens parla del procés d'adquisició de dades que té dues fonts: la primera la API de la pròpia plataforma Steam que ens donarà informació sobre els jocs referents als gèneres que pertany, la seva compatibilitat, preu, etc i la segona provinent de la pàgina web steamspy.com que aportarà les dades sobre ventes i popularitat extrapolades fent servir la mateix API oficial a la que hem fet referència. Degut a la popularitat d'steamspy els creadors d'Steam van restringir part de la informació provinent dels perfils dels usuaris de la plataforma que l'autor d'steamspy feia servir per a extrapolar-ne les dades de popularitat de forma prou detallada. La situació original era que tot perfil d'usuari era per defecte públic, això comportava un clar problema de protecció de dades i es va canviar, cosa que va fer mínbar sobtadament el nombre de perfils públics disponibles als usuaris que han fet explicit que el seu perfil sigui públic. Això ha fet que les dades d´<em>ownership</em> a la que ens permet accedir la plataforma hagin passat a ser aproximacions entre dues xifres, de 0 a 20.000, per exemple. Per tant, el creador del dataset ha combinat les dades provinents de la API mateixa d'Steam amb les que actualment prové steamspy sobre popularitat per a crear el dataset del que <em>estem</em> parlant. Com veurem més endavant el procés de neteja de dades que hem realitzat per a poder donar resposta  la nostra pregunta no ha estat pas fàcil.</p>
+<p>Personalment nosaltres ens preguntàvem si el fet d'incloure un mode multigador a un joc AA o AAA modifica positivament les seves ventes o recepció popular. Un joc AAA és l'equivalent a un blockbuster a Hollywood, wikipedia: <a href="https://en.wikipedia.org/wiki/AAA_(video_game_industry">https://en.wikipedia.org/wiki/AAA_(video_game_industry</a>) . Anàlogament i de forma també informal un joc AA és un joc també amb intenció de ser <em>mainstream</em>, però d'un pressupost més limitat. Molts videojocs europeus o japonesos desenvolupats per estudis de mida mitjana entren en aquesta categoria. Volem per tant centrar-nos en si el fet de tenir multigador modifica la recepció o las ventes de jocs AA o AAA <em>premium</em> i no <em>free to play</em>.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.2.-Comprovaci&#243;-de-la-normalitat-i-homogene&#239;tat-de-la-vari&#224;ncia.">4.2. Comprovaci&#243; de la normalitat i homogene&#239;tat de la vari&#224;ncia.<a class="anchor-link" href="#4.2.-Comprovaci&#243;-de-la-normalitat-i-homogene&#239;tat-de-la-vari&#224;ncia.">&#182;</a></h3><h3 id="4.3.-Aplicaci&#243;-de-proves-estad&#237;stiques-per-comparar-els-grups-de-dades.-En-funci&#243;-de-les-dades-i-de-l&#8217;objectiu-de-l&#8217;estudi,-aplicar-proves-de-contrast-d&#8217;hip&#242;tesis,-correlacions,-regressions,-etc.-Aplicar-almenys-tres-m&#232;todes-d&#8217;an&#224;lisi-diferents.">4.3. Aplicaci&#243; de proves estad&#237;stiques per comparar els grups de dades. En funci&#243; de les dades i de l&#8217;objectiu de l&#8217;estudi, aplicar proves de contrast d&#8217;hip&#242;tesis, correlacions, regressions, etc. Aplicar almenys tres m&#232;todes d&#8217;an&#224;lisi diferents.<a class="anchor-link" href="#4.3.-Aplicaci&#243;-de-proves-estad&#237;stiques-per-comparar-els-grups-de-dades.-En-funci&#243;-de-les-dades-i-de-l&#8217;objectiu-de-l&#8217;estudi,-aplicar-proves-de-contrast-d&#8217;hip&#242;tesis,-correlacions,-regressions,-etc.-Aplicar-almenys-tres-m&#232;todes-d&#8217;an&#224;lisi-diferents.">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="5.-Representaci&#243;-dels-resultats-a-partir-de-taules-i-gr&#224;fiques.">5. Representaci&#243; dels resultats a partir de taules i gr&#224;fiques.<a class="anchor-link" href="#5.-Representaci&#243;-dels-resultats-a-partir-de-taules-i-gr&#224;fiques.">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="6.-Resoluci&#243;-del-problema.-A-partir-dels-resultats-obtinguts,-quines-s&#243;n-les-conclusions?-Els-resultats-permeten-respondre-al-problema?">6. Resoluci&#243; del problema. A partir dels resultats obtinguts, quines s&#243;n les conclusions? Els resultats permeten respondre al problema?<a class="anchor-link" href="#6.-Resoluci&#243;-del-problema.-A-partir-dels-resultats-obtinguts,-quines-s&#243;n-les-conclusions?-Els-resultats-permeten-respondre-al-problema?">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="7.-Codi:-Cal-adjuntar-el-codi,-preferiblement-en-R,-amb-el-que-s&#8217;ha-realitzat-la-neteja,-an&#224;lisi-i-representaci&#243;-de-les-dades.-Si-ho-preferiu,-tamb&#233;-podeu-treballar-en-Python.">7. Codi: Cal adjuntar el codi, preferiblement en R, amb el que s&#8217;ha realitzat la neteja, an&#224;lisi i representaci&#243; de les dades. Si ho preferiu, tamb&#233; podeu treballar en Python.<a class="anchor-link" href="#7.-Codi:-Cal-adjuntar-el-codi,-preferiblement-en-R,-amb-el-que-s&#8217;ha-realitzat-la-neteja,-an&#224;lisi-i-representaci&#243;-de-les-dades.-Si-ho-preferiu,-tamb&#233;-podeu-treballar-en-Python.">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -11826,10 +11795,12 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[228]:</div>
+<div class="prompt input_prompt">In&nbsp;[868]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
 <span class="n">steam</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;csv/steam.csv&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -11840,7 +11811,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[229]:</div>
+<div class="prompt input_prompt">In&nbsp;[869]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">steam</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">)</span>
@@ -11856,7 +11827,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[229]:</div>
+<div class="prompt output_prompt">Out[869]:</div>
 
 
 
@@ -12153,7 +12124,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[230]:</div>
+<div class="prompt input_prompt">In&nbsp;[870]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">steam</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">()</span>
@@ -12169,7 +12140,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[230]:</div>
+<div class="prompt output_prompt">Out[870]:</div>
 
 
 
@@ -12204,7 +12175,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[231]:</div>
+<div class="prompt input_prompt">In&nbsp;[871]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">steam</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">()</span>
@@ -12220,7 +12191,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[231]:</div>
+<div class="prompt output_prompt">Out[871]:</div>
 
 
 
@@ -12264,7 +12235,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[232]:</div>
+<div class="prompt input_prompt">In&nbsp;[872]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">steam_AAA</span> <span class="o">=</span> <span class="n">steam</span><span class="p">[</span><span class="n">steam</span><span class="o">.</span><span class="n">price</span><span class="o">&gt;</span> <span class="mi">24</span><span class="p">]</span>
@@ -12277,7 +12248,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[233]:</div>
+<div class="prompt input_prompt">In&nbsp;[873]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">steam_AAA</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -12293,7 +12264,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[233]:</div>
+<div class="prompt output_prompt">Out[873]:</div>
 
 
 
@@ -12439,14 +12410,14 @@ dtype: bool</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.2.-Identificaci&#243;-i-tractament-de-valors-extrems.">3.2. Identificaci&#243; i tractament de valors extrems.<a class="anchor-link" href="#3.2.-Identificaci&#243;-i-tractament-de-valors-extrems.">&#182;</a></h3><p>Per a tractar-ne els valors extrems el que primer farem serà visualitzar les dades fent servir uns quants <em>boxplots</em>.　Les columnes que estem analitzant seran price, positive ratings i negative ratings. Els boxplots ens mostrem que totes tres contenen valors extrems o <em>outliers</em>.</p>
+<h3 id="3.2.-Identificaci&#243;-i-tractament-de-valors-extrems.">3.2. Identificaci&#243; i tractament de valors extrems.<a class="anchor-link" href="#3.2.-Identificaci&#243;-i-tractament-de-valors-extrems.">&#182;</a></h3><p>Per a tractar-ne els valors extrems el que primer farem serà visualitzar les dades fent servir uns quants <em>boxplots</em>. Les columnes que estem analitzant seran price, positive ratings i negative ratings. Els boxplots ens mostrem que totes tres contenen valors extrems o <em>outliers</em>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[234]:</div>
+<div class="prompt input_prompt">In&nbsp;[874]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">boxplot_price</span> <span class="o">=</span> <span class="n">steam_AAA</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">])</span>
@@ -12463,13 +12434,13 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[234]:</div>
+<div class="prompt output_prompt">Out[874]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d2a774710&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d2e5963c8&gt;</pre>
 </div>
 
 </div>
@@ -12495,7 +12466,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[235]:</div>
+<div class="prompt input_prompt">In&nbsp;[875]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">boxplot_pr</span> <span class="o">=</span> <span class="n">steam_AAA</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;positive_ratings&#39;</span><span class="p">])</span>
@@ -12512,13 +12483,13 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[235]:</div>
+<div class="prompt output_prompt">Out[875]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d25aa6f60&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d2e5ba2b0&gt;</pre>
 </div>
 
 </div>
@@ -12544,7 +12515,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[236]:</div>
+<div class="prompt input_prompt">In&nbsp;[876]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">boxplot_nr</span> <span class="o">=</span> <span class="n">steam_AAA</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;negative_ratings&#39;</span><span class="p">])</span>
@@ -12561,13 +12532,13 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[236]:</div>
+<div class="prompt output_prompt">Out[876]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d25a11160&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d2df4e320&gt;</pre>
 </div>
 
 </div>
@@ -12602,7 +12573,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[237]:</div>
+<div class="prompt input_prompt">In&nbsp;[877]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">stats</span>
@@ -12636,7 +12607,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[238]:</div>
+<div class="prompt input_prompt">In&nbsp;[878]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">threshold</span> <span class="o">=</span> <span class="mi">3</span>
@@ -12669,7 +12640,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[239]:</div>
+<div class="prompt input_prompt">In&nbsp;[879]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">index_price_outliers</span> <span class="o">=</span> <span class="p">[]</span>
@@ -12693,7 +12664,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[240]:</div>
+<div class="prompt input_prompt">In&nbsp;[880]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">steam_AAA</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">index_price_outliers</span><span class="p">,</span> <span class="p">:]</span>
@@ -12709,7 +12680,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[240]:</div>
+<div class="prompt output_prompt">Out[880]:</div>
 
 
 
@@ -13006,7 +12977,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[241]:</div>
+<div class="prompt input_prompt">In&nbsp;[881]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">z_pr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">stats</span><span class="o">.</span><span class="n">zscore</span><span class="p">(</span><span class="n">steam_AAA</span><span class="p">[</span><span class="s2">&quot;positive_ratings&quot;</span><span class="p">]))</span>
@@ -13039,7 +13010,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[242]:</div>
+<div class="prompt input_prompt">In&nbsp;[882]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">index_pr_outliers</span> <span class="o">=</span> <span class="p">[]</span>
@@ -13054,7 +13025,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[243]:</div>
+<div class="prompt input_prompt">In&nbsp;[883]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">steam_AAA</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">index_pr_outliers</span><span class="p">,</span> <span class="p">:]</span>
@@ -13070,7 +13041,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[243]:</div>
+<div class="prompt output_prompt">Out[883]:</div>
 
 
 
@@ -13295,7 +13266,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[244]:</div>
+<div class="prompt input_prompt">In&nbsp;[884]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">z_nr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">stats</span><span class="o">.</span><span class="n">zscore</span><span class="p">(</span><span class="n">steam_AAA</span><span class="p">[</span><span class="s2">&quot;negative_ratings&quot;</span><span class="p">]))</span>
@@ -13328,7 +13299,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[245]:</div>
+<div class="prompt input_prompt">In&nbsp;[885]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">index_nr_outliers</span> <span class="o">=</span> <span class="p">[]</span>
@@ -13343,7 +13314,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[246]:</div>
+<div class="prompt input_prompt">In&nbsp;[886]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">steam_AAA</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">index_nr_outliers</span><span class="p">,</span> <span class="p">:]</span>
@@ -13359,7 +13330,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[246]:</div>
+<div class="prompt output_prompt">Out[886]:</div>
 
 
 
@@ -13509,7 +13480,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[247]:</div>
+<div class="prompt input_prompt">In&nbsp;[887]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">steam_AAA_no</span> <span class="o">=</span> <span class="n">steam_AAA</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">steam_AAA</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">index_price_outliers</span><span class="p">])</span>
@@ -13522,7 +13493,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[248]:</div>
+<div class="prompt input_prompt">In&nbsp;[888]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">boxplot_price_no</span> <span class="o">=</span> <span class="n">steam_AAA_no</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">])</span>
@@ -13539,13 +13510,13 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[248]:</div>
+<div class="prompt output_prompt">Out[888]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d259039e8&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d2deac780&gt;</pre>
 </div>
 
 </div>
@@ -13580,7 +13551,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[249]:</div>
+<div class="prompt input_prompt">In&nbsp;[889]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">steam_AAA_no</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="s1">&#39;positive_ratings&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
@@ -13596,7 +13567,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[249]:</div>
+<div class="prompt output_prompt">Out[889]:</div>
 
 
 
@@ -13704,7 +13675,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[250]:</div>
+<div class="prompt input_prompt">In&nbsp;[890]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">steam_AAA_no</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="s1">&#39;negative_ratings&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
@@ -13720,7 +13691,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[250]:</div>
+<div class="prompt output_prompt">Out[890]:</div>
 
 
 
@@ -14029,7 +14000,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[251]:</div>
+<div class="prompt input_prompt">In&nbsp;[891]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">steam_AAA_no</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="s1">&#39;developer&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Chroma Coda&quot;</span><span class="p">]</span>
@@ -14045,7 +14016,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[251]:</div>
+<div class="prompt output_prompt">Out[891]:</div>
 
 
 
@@ -14123,7 +14094,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[252]:</div>
+<div class="prompt input_prompt">In&nbsp;[892]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">steam_AAA_no</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="s1">&#39;developer&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;CyberLink&quot;</span><span class="p">]</span>
@@ -14139,7 +14110,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[252]:</div>
+<div class="prompt output_prompt">Out[892]:</div>
 
 
 
@@ -14226,7 +14197,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[253]:</div>
+<div class="prompt input_prompt">In&nbsp;[893]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">tag_checker</span><span class="p">(</span><span class="n">dataframe</span><span class="p">,</span> <span class="n">column_name</span><span class="p">,</span> <span class="n">tag</span><span class="p">):</span>
@@ -14252,7 +14223,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[254]:</div>
+<div class="prompt input_prompt">In&nbsp;[894]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">audio</span> <span class="o">=</span> <span class="n">tag_checker</span><span class="p">(</span><span class="n">steam_AAA_no</span><span class="p">,</span> <span class="s2">&quot;steamspy_tags&quot;</span><span class="p">,</span> <span class="s2">&quot;Audio Production&quot;</span><span class="p">)</span>
@@ -14271,7 +14242,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[254]:</div>
+<div class="prompt output_prompt">Out[894]:</div>
 
 
 
@@ -14382,7 +14353,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[255]:</div>
+<div class="prompt input_prompt">In&nbsp;[895]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">utilities</span> <span class="o">=</span> <span class="n">tag_checker</span><span class="p">(</span><span class="n">steam_AAA_no</span><span class="p">,</span> <span class="s2">&quot;steamspy_tags&quot;</span><span class="p">,</span> <span class="s2">&quot;Utilities&quot;</span><span class="p">)</span>
@@ -14401,7 +14372,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[255]:</div>
+<div class="prompt output_prompt">Out[895]:</div>
 
 
 
@@ -14736,12 +14707,13 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[256]:</div>
+<div class="prompt input_prompt">In&nbsp;[896]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">steam_AAA_no</span><span class="p">))</span>
 <span class="n">steam_AAA_no</span> <span class="o">=</span> <span class="n">steam_AAA_no</span><span class="p">[</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="s1">&#39;utilities&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">]</span>
 <span class="n">steam_AAA_no</span> <span class="o">=</span> <span class="n">steam_AAA_no</span><span class="p">[</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="s1">&#39;developer&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;Chroma Coda&quot;</span><span class="p">]</span>
+<span class="n">steam_AAA_no</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s2">&quot;audio&quot;</span><span class="p">,</span> <span class="s2">&quot;utilities&quot;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">steam_AAA_no</span><span class="p">))</span>
 </pre></div>
 
@@ -14780,7 +14752,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[257]:</div>
+<div class="prompt input_prompt">In&nbsp;[897]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sexual_content</span> <span class="o">=</span> <span class="n">tag_checker</span><span class="p">(</span><span class="n">steam_AAA_no</span><span class="p">,</span> <span class="s2">&quot;steamspy_tags&quot;</span><span class="p">,</span> <span class="s2">&quot;Sexual Content&quot;</span><span class="p">)</span>
@@ -14799,7 +14771,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[257]:</div>
+<div class="prompt output_prompt">Out[897]:</div>
 
 
 
@@ -14832,7 +14804,7 @@ dtype: bool</pre>
       <th>required_age</th>
       <th>categories</th>
       <th>genres</th>
-      <th>...</th>
+      <th>steamspy_tags</th>
       <th>achievements</th>
       <th>positive_ratings</th>
       <th>negative_ratings</th>
@@ -14840,8 +14812,6 @@ dtype: bool</pre>
       <th>median_playtime</th>
       <th>owners</th>
       <th>price</th>
-      <th>audio</th>
-      <th>utilities</th>
       <th>Sexual-content</th>
     </tr>
   </thead>
@@ -14858,7 +14828,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Steam Achievements;Steam Trading Cards;Captions available;Partial Controller Support;Steam Cloud</td>
       <td>Adventure;Casual</td>
-      <td>...</td>
+      <td>Sexual Content;Anime;Mature</td>
       <td>44</td>
       <td>390</td>
       <td>37</td>
@@ -14866,8 +14836,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>20000-50000</td>
       <td>26.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -14882,7 +14850,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Multi-player;Steam Achievements;Steam Trading Cards;Partial Controller Support;Steam Cloud</td>
       <td>Action</td>
-      <td>...</td>
+      <td>Nudity;Sexual Content;Anime</td>
       <td>50</td>
       <td>2837</td>
       <td>127</td>
@@ -14890,8 +14858,6 @@ dtype: bool</pre>
       <td>1993</td>
       <td>50000-100000</td>
       <td>24.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -14906,7 +14872,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Steam Achievements;Steam Trading Cards;Steam Cloud</td>
       <td>Action;Adventure</td>
-      <td>...</td>
+      <td>Sexual Content;Anime;Nudity</td>
       <td>39</td>
       <td>1269</td>
       <td>202</td>
@@ -14914,8 +14880,6 @@ dtype: bool</pre>
       <td>232</td>
       <td>50000-100000</td>
       <td>29.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -14930,7 +14894,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Steam Trading Cards</td>
       <td>Adventure</td>
-      <td>...</td>
+      <td>Anime;Sexual Content;Dating Sim</td>
       <td>0</td>
       <td>1380</td>
       <td>29</td>
@@ -14938,8 +14902,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>20000-50000</td>
       <td>27.79</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -14954,7 +14916,7 @@ dtype: bool</pre>
       <td>18</td>
       <td>Single-player;Steam Achievements</td>
       <td>Sexual Content;Nudity;Action;Casual;Indie;RPG;Simulation;Strategy</td>
-      <td>...</td>
+      <td>Sexual Content;Nudity;Simulation</td>
       <td>185</td>
       <td>40</td>
       <td>61</td>
@@ -14962,8 +14924,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>0-20000</td>
       <td>24.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -14978,7 +14938,7 @@ dtype: bool</pre>
       <td>18</td>
       <td>Single-player;Steam Achievements;Steam Trading Cards</td>
       <td>Sexual Content;Nudity;Adventure;Casual;Simulation</td>
-      <td>...</td>
+      <td>Sexual Content;Visual Novel;Nudity</td>
       <td>15</td>
       <td>31</td>
       <td>5</td>
@@ -14986,8 +14946,6 @@ dtype: bool</pre>
       <td>276</td>
       <td>0-20000</td>
       <td>29.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15002,7 +14960,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Steam Trading Cards;Steam Cloud</td>
       <td>Sexual Content;Adventure;Casual</td>
-      <td>...</td>
+      <td>Sexual Content;Adventure;Casual</td>
       <td>0</td>
       <td>28</td>
       <td>2</td>
@@ -15010,8 +14968,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>0-20000</td>
       <td>26.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15026,7 +14982,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Steam Achievements;Steam Trading Cards</td>
       <td>Sexual Content;Nudity;Adventure;Indie</td>
-      <td>...</td>
+      <td>Sexual Content;Visual Novel;Nudity</td>
       <td>18</td>
       <td>61</td>
       <td>8</td>
@@ -15034,8 +14990,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>0-20000</td>
       <td>27.79</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15050,7 +15004,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Steam Achievements;Partial Controller Support</td>
       <td>RPG</td>
-      <td>...</td>
+      <td>RPG;Sexual Content;Anime</td>
       <td>52</td>
       <td>170</td>
       <td>49</td>
@@ -15058,8 +15012,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>0-20000</td>
       <td>49.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15074,7 +15026,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Steam Achievements</td>
       <td>Casual;Indie</td>
-      <td>...</td>
+      <td>Sexual Content;Nudity;Visual Novel</td>
       <td>17</td>
       <td>12</td>
       <td>1</td>
@@ -15082,8 +15034,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>0-20000</td>
       <td>27.79</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15098,7 +15048,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Online Multi-Player;Steam Achievements;Steam Trading Cards;Partial Controller Support;Steam Cloud;Steam Leaderboards</td>
       <td>Action</td>
-      <td>...</td>
+      <td>Sexual Content;Nudity;Anime</td>
       <td>50</td>
       <td>1783</td>
       <td>647</td>
@@ -15106,8 +15056,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>50000-100000</td>
       <td>24.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15122,7 +15070,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Steam Cloud</td>
       <td>RPG</td>
-      <td>...</td>
+      <td>Sexual Content;Nudity;Visual Novel</td>
       <td>0</td>
       <td>63</td>
       <td>2</td>
@@ -15130,8 +15078,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>0-20000</td>
       <td>30.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15146,7 +15092,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Full controller support</td>
       <td>Sexual Content;Nudity;Adventure</td>
-      <td>...</td>
+      <td>Sexual Content;Nudity;VR</td>
       <td>0</td>
       <td>513</td>
       <td>125</td>
@@ -15154,8 +15100,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>20000-50000</td>
       <td>32.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15170,7 +15114,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Steam Achievements;Full controller support;Steam Cloud</td>
       <td>Adventure;Casual</td>
-      <td>...</td>
+      <td>Sexual Content;Anime;Casual</td>
       <td>37</td>
       <td>57</td>
       <td>31</td>
@@ -15178,8 +15122,6 @@ dtype: bool</pre>
       <td>302</td>
       <td>0-20000</td>
       <td>30.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15194,7 +15136,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Steam Achievements;Steam Trading Cards;Steam Cloud</td>
       <td>Adventure</td>
-      <td>...</td>
+      <td>Nudity;Sexual Content;Adventure</td>
       <td>31</td>
       <td>259</td>
       <td>31</td>
@@ -15202,8 +15144,6 @@ dtype: bool</pre>
       <td>1048</td>
       <td>0-20000</td>
       <td>25.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15218,7 +15158,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Multi-player;Online Multi-Player;Local Multi-Player;Steam Achievements;Full controller support;In-App Purchases;Steam Cloud;Steam Leaderboards</td>
       <td>Action</td>
-      <td>...</td>
+      <td>Fighting;Action;Sexual Content</td>
       <td>36</td>
       <td>1454</td>
       <td>836</td>
@@ -15226,8 +15166,6 @@ dtype: bool</pre>
       <td>57</td>
       <td>20000-50000</td>
       <td>54.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15242,7 +15180,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player</td>
       <td>Simulation</td>
-      <td>...</td>
+      <td>Nudity;Sexual Content;Simulation</td>
       <td>0</td>
       <td>4</td>
       <td>7</td>
@@ -15250,8 +15188,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>0-20000</td>
       <td>30.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15266,7 +15202,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Steam Achievements;Partial Controller Support;Steam Cloud</td>
       <td>Action;Adventure</td>
-      <td>...</td>
+      <td>Sexual Content;Nudity;Anime</td>
       <td>37</td>
       <td>306</td>
       <td>28</td>
@@ -15274,8 +15210,6 @@ dtype: bool</pre>
       <td>539</td>
       <td>0-20000</td>
       <td>29.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15290,7 +15224,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Steam Achievements;Steam Trading Cards;Partial Controller Support;Steam Cloud</td>
       <td>Action</td>
-      <td>...</td>
+      <td>Nudity;Sexual Content;Action</td>
       <td>51</td>
       <td>306</td>
       <td>52</td>
@@ -15298,8 +15232,6 @@ dtype: bool</pre>
       <td>84</td>
       <td>0-20000</td>
       <td>34.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15314,7 +15246,7 @@ dtype: bool</pre>
       <td>0</td>
       <td>Single-player;Steam Cloud</td>
       <td>Adventure</td>
-      <td>...</td>
+      <td>Adventure;Sexual Content;Visual Novel</td>
       <td>0</td>
       <td>31</td>
       <td>1</td>
@@ -15322,8 +15254,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>0-20000</td>
       <td>27.79</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15338,7 +15268,7 @@ dtype: bool</pre>
       <td>18</td>
       <td>Single-player;Steam Cloud</td>
       <td>Adventure</td>
-      <td>...</td>
+      <td>Sexual Content;Nudity;Visual Novel</td>
       <td>0</td>
       <td>61</td>
       <td>3</td>
@@ -15346,8 +15276,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>0-20000</td>
       <td>27.79</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15362,7 +15290,7 @@ dtype: bool</pre>
       <td>18</td>
       <td>Single-player;Steam Cloud</td>
       <td>Indie</td>
-      <td>...</td>
+      <td>Sexual Content;Violent;Nudity</td>
       <td>0</td>
       <td>9</td>
       <td>1</td>
@@ -15370,8 +15298,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>0-20000</td>
       <td>30.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15386,7 +15312,7 @@ dtype: bool</pre>
       <td>18</td>
       <td>Single-player;Steam Achievements;Partial Controller Support;Steam Cloud</td>
       <td>Adventure</td>
-      <td>...</td>
+      <td>Adventure;Violent;Sexual Content</td>
       <td>31</td>
       <td>22</td>
       <td>0</td>
@@ -15394,8 +15320,6 @@ dtype: bool</pre>
       <td>0</td>
       <td>0-20000</td>
       <td>32.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
     <tr>
@@ -15410,7 +15334,7 @@ dtype: bool</pre>
       <td>18</td>
       <td>Single-player;Steam Cloud</td>
       <td>Adventure</td>
-      <td>...</td>
+      <td>Sexual Content;Nudity;Adventure</td>
       <td>0</td>
       <td>21</td>
       <td>0</td>
@@ -15418,177 +15342,13 @@ dtype: bool</pre>
       <td>0</td>
       <td>0-20000</td>
       <td>31.99</td>
-      <td>0</td>
-      <td>0</td>
       <td>1</td>
     </tr>
   </tbody>
 </table>
-<p>24 rows × 21 columns</p>
 </div>
 </div>
 
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="4.-An&#224;lisi-de-les-dades.">4. An&#224;lisi de les dades.<a class="anchor-link" href="#4.-An&#224;lisi-de-les-dades.">&#182;</a></h2><h3 id="4.1.-Selecci&#243;-dels-grups-de-dades-que-es-volen-analitzar/comparar-(planificaci&#243;-dels-an&#224;lisis-a-aplicar).">4.1. Selecci&#243; dels grups de dades que es volen analitzar/comparar (planificaci&#243; dels an&#224;lisis a aplicar).<a class="anchor-link" href="#4.1.-Selecci&#243;-dels-grups-de-dades-que-es-volen-analitzar/comparar-(planificaci&#243;-dels-an&#224;lisis-a-aplicar).">&#182;</a></h3><p>Ara passarem a dividir les dades en els dos grups que volem analitzar: jocs purament d'un jugador o que continguin també mode multi-jugador. Per a fer-ho cridarem de nou al mètode tag_checker descrit anteriorment per l'etiqueta "multiplayer" a la columna categories.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[258]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">multiplayer</span> <span class="o">=</span> <span class="n">tag_checker</span><span class="p">(</span><span class="n">steam_AAA_no</span><span class="p">,</span> <span class="s2">&quot;categories&quot;</span><span class="p">,</span> <span class="s2">&quot;Multi-player&quot;</span><span class="p">)</span>
-<span class="n">steam_AAA_no</span><span class="p">[</span><span class="s2">&quot;multiplayer&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">multiplayer</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_colwidth&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">steam_AAA_no</span><span class="p">[[</span><span class="s2">&quot;categories&quot;</span><span class="p">,</span> <span class="s2">&quot;multiplayer&quot;</span><span class="p">]][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[258]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>categories</th>
-      <th>multiplayer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>77</th>
-      <td>Single-player;Steam Achievements;Full controller support;Steam Trading Cards;Captions available;Steam Workshop;Steam Cloud</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>123</th>
-      <td>Single-player;Multi-player</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>184</th>
-      <td>Single-player;Multi-player;Includes level editor</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>455</th>
-      <td>Single-player</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>501</th>
-      <td>Single-player;Steam Achievements;Full controller support;Steam Trading Cards;Steam Workshop;In-App Purchases;Steam Cloud;Steam Leaderboards</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>780</th>
-      <td>Single-player;Multi-player;Online Multi-Player;Local Multi-Player;Co-op;Online Co-op;Local Co-op;Shared/Split Screen;Cross-Platform Multiplayer;Steam Achievements;Full controller support;Steam Trading Cards;Steam Workshop;Steam Cloud;Steam Leaderboards;Includes level editor</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>801</th>
-      <td>Single-player;Multi-player;Co-op;Steam Achievements;Partial Controller Support;Valve Anti-Cheat enabled</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>864</th>
-      <td>Single-player</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>865</th>
-      <td>Single-player</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>870</th>
-      <td>Single-player</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Podem veure que ara mateix tindríem 394 jocs purament <em>singleplayer</em> i 225 <em>multiplayer</em>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[259]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="s2">&quot;multiplayer&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="s2">&quot;multiplayer&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>394
-225
-</pre>
-</div>
 </div>
 
 </div>
@@ -15606,7 +15366,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[260]:</div>
+<div class="prompt input_prompt">In&nbsp;[898]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">owner_parser</span><span class="p">(</span><span class="n">dataframe</span><span class="p">,</span> <span class="n">column_name</span><span class="p">):</span>
@@ -15628,7 +15388,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[261]:</div>
+<div class="prompt input_prompt">In&nbsp;[899]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">corrected_owners</span> <span class="o">=</span> <span class="n">owner_parser</span><span class="p">(</span><span class="n">steam_AAA_no</span><span class="p">,</span> <span class="s2">&quot;owners&quot;</span><span class="p">)</span>
@@ -15647,7 +15407,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[261]:</div>
+<div class="prompt output_prompt">Out[899]:</div>
 
 
 
@@ -15736,9 +15496,18 @@ dtype: bool</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ara hem creat una altra funció aquest té l'objectiu de crear una nova variable total_ratings que s'encarregarà de combinar els ratings positius i negatius a una sola columna i que a més a més filtrarà tots aquells que en conjunt tinguin menys de 50 valoracions, ja que no sembla lògic que cap joc que no s'hagi acabat de llançar i fos un joc <em>premium</em> no contés amb almenys 50 valoracions en total. Si hem escollit 50 com a <em>threshold</em> es perquè experimentalment vam veure que els usuaris de parla no anglesa tendeixen a deixar menys comentaris públics i això fa que jocs japonesos, xinesos, etc tinguin menys valoracions per compra dels ratings habituals. Si el joc s'acaba de llençar tampoc aportarà prou informació si només menys de 50 valoracions, per tot això hem escollit aquesta xifra.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[262]:</div>
+<div class="prompt input_prompt">In&nbsp;[900]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">total_rating</span><span class="p">(</span><span class="n">dataframe</span><span class="p">):</span>    
@@ -15770,7 +15539,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[263]:</div>
+<div class="prompt input_prompt">In&nbsp;[901]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">total_ratings</span> <span class="o">=</span> <span class="n">total_rating</span><span class="p">(</span><span class="n">steam_AAA_no</span><span class="p">[[</span><span class="s2">&quot;positive_ratings&quot;</span><span class="p">,</span> <span class="s2">&quot;negative_ratings&quot;</span><span class="p">]])</span>
@@ -15806,12 +15575,183 @@ dtype: bool</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="4.-An&#224;lisi-de-les-dades.">4. An&#224;lisi de les dades.<a class="anchor-link" href="#4.-An&#224;lisi-de-les-dades.">&#182;</a></h2><h3 id="4.1.-Selecci&#243;-dels-grups-de-dades-que-es-volen-analitzar/comparar-(planificaci&#243;-dels-an&#224;lisis-a-aplicar).">4.1. Selecci&#243; dels grups de dades que es volen analitzar/comparar (planificaci&#243; dels an&#224;lisis a aplicar).<a class="anchor-link" href="#4.1.-Selecci&#243;-dels-grups-de-dades-que-es-volen-analitzar/comparar-(planificaci&#243;-dels-an&#224;lisis-a-aplicar).">&#182;</a></h3><p>Ara passarem a dividir les dades en els dos grups que volem analitzar: jocs purament d'un jugador o que continguin també mode multi-jugador. Per a fer-ho cridarem de nou al mètode tag_checker descrit anteriorment per l'etiqueta "multiplayer" a la columna categories.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[264]:</div>
+<div class="prompt input_prompt">In&nbsp;[902]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">steam_AAA_no</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s2">&quot;audio&quot;</span><span class="p">,</span> <span class="s2">&quot;utilities&quot;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">multiplayer</span> <span class="o">=</span> <span class="n">tag_checker</span><span class="p">(</span><span class="n">steam_AAA_no</span><span class="p">,</span> <span class="s2">&quot;categories&quot;</span><span class="p">,</span> <span class="s2">&quot;Multi-player&quot;</span><span class="p">)</span>
+<span class="n">steam_AAA_no</span><span class="p">[</span><span class="s2">&quot;multiplayer&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">multiplayer</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_colwidth&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">steam_AAA_no</span><span class="p">[[</span><span class="s2">&quot;categories&quot;</span><span class="p">,</span> <span class="s2">&quot;multiplayer&quot;</span><span class="p">]][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[902]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>categories</th>
+      <th>multiplayer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>77</th>
+      <td>Single-player;Steam Achievements;Full controller support;Steam Trading Cards;Captions available;Steam Workshop;Steam Cloud</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>Single-player;Multi-player</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>184</th>
+      <td>Single-player;Multi-player;Includes level editor</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>455</th>
+      <td>Single-player</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>501</th>
+      <td>Single-player;Steam Achievements;Full controller support;Steam Trading Cards;Steam Workshop;In-App Purchases;Steam Cloud;Steam Leaderboards</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>780</th>
+      <td>Single-player;Multi-player;Online Multi-Player;Local Multi-Player;Co-op;Online Co-op;Local Co-op;Shared/Split Screen;Cross-Platform Multiplayer;Steam Achievements;Full controller support;Steam Trading Cards;Steam Workshop;Steam Cloud;Steam Leaderboards;Includes level editor</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>801</th>
+      <td>Single-player;Multi-player;Co-op;Steam Achievements;Partial Controller Support;Valve Anti-Cheat enabled</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>888</th>
+      <td>Single-player</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>891</th>
+      <td>Single-player;Multi-player;Co-op</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>999</th>
+      <td>Single-player;Multi-player;Steam Achievements;Steam Trading Cards;Steam Workshop;Steam Cloud</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podem veure que ara mateix tindríem 325 jocs purament <em>singleplayer</em> i 211 <em>multiplayer</em>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[903]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="s2">&quot;multiplayer&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="s2">&quot;multiplayer&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>325
+211
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En aquest punt ja tindrem la versió final netejada de les nostres dades, per tant la desarem a la carpeta /csv sota el nom steam_AAA.csv</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[904]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">final_csv_name</span> <span class="o">=</span> <span class="s2">&quot;csv/steam_AAA.csv&quot;</span>
+<span class="n">steam_AAA_no</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">final_csv_name</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -15819,9 +15759,18 @@ dtype: bool</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.2.-Comprovaci&#243;-de-la-normalitat-i-homogene&#239;tat-de-la-vari&#224;ncia.">4.2. Comprovaci&#243; de la normalitat i homogene&#239;tat de la vari&#224;ncia.<a class="anchor-link" href="#4.2.-Comprovaci&#243;-de-la-normalitat-i-homogene&#239;tat-de-la-vari&#224;ncia.">&#182;</a></h3><p>Per a comprovar la normalitat farem servir primer probplot sobre el preu. Els resultats ja semblem indicar que no es tracta d'una distribució normal. Passarem a estudiar-ho en profunditat.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[265]:</div>
+<div class="prompt input_prompt">In&nbsp;[905]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -15858,9 +15807,18 @@ dtype: bool</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Crearem ara un pandas dataframe pels jocs purament <em>singleplayer</em> i amb <em>mutiplayer</em> per a poder treballar més fàcilment amb ambdós grups.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[266]:</div>
+<div class="prompt input_prompt">In&nbsp;[906]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">singleAAA</span> <span class="o">=</span> <span class="n">steam_AAA_no</span><span class="p">[</span><span class="n">steam_AAA_no</span><span class="p">[</span><span class="s2">&quot;multiplayer&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
@@ -15874,7 +15832,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[267]:</div>
+<div class="prompt input_prompt">In&nbsp;[907]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">singleAAA</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -15890,7 +15848,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[267]:</div>
+<div class="prompt output_prompt">Out[907]:</div>
 
 
 
@@ -15923,9 +15881,9 @@ dtype: bool</pre>
       <th>median_playtime</th>
       <th>price</th>
       <th>Sexual-content</th>
-      <th>multiplayer</th>
       <th>corrected_owners</th>
       <th>total_ratings</th>
+      <th>multiplayer</th>
     </tr>
   </thead>
   <tbody>
@@ -15941,9 +15899,9 @@ dtype: bool</pre>
       <td>325.000000</td>
       <td>325.000000</td>
       <td>325.000000</td>
-      <td>325.0</td>
       <td>3.250000e+02</td>
       <td>325.000000</td>
+      <td>325.0</td>
     </tr>
     <tr>
       <th>mean</th>
@@ -15957,9 +15915,9 @@ dtype: bool</pre>
       <td>810.387692</td>
       <td>33.973200</td>
       <td>0.043077</td>
-      <td>0.0</td>
       <td>3.468769e+05</td>
       <td>77.039505</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>std</th>
@@ -15973,9 +15931,9 @@ dtype: bool</pre>
       <td>2847.855045</td>
       <td>9.451473</td>
       <td>0.203343</td>
-      <td>0.0</td>
       <td>8.464041e+05</td>
       <td>15.213155</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>min</th>
@@ -15989,9 +15947,9 @@ dtype: bool</pre>
       <td>0.000000</td>
       <td>24.500000</td>
       <td>0.000000</td>
-      <td>0.0</td>
       <td>1.000000e+04</td>
       <td>20.081136</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>25%</th>
@@ -16005,9 +15963,9 @@ dtype: bool</pre>
       <td>0.000000</td>
       <td>26.990000</td>
       <td>0.000000</td>
-      <td>0.0</td>
       <td>1.000000e+04</td>
       <td>70.132198</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>50%</th>
@@ -16021,9 +15979,9 @@ dtype: bool</pre>
       <td>83.000000</td>
       <td>29.990000</td>
       <td>0.000000</td>
-      <td>0.0</td>
       <td>3.500000e+04</td>
       <td>79.574436</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>75%</th>
@@ -16037,9 +15995,9 @@ dtype: bool</pre>
       <td>817.000000</td>
       <td>39.990000</td>
       <td>0.000000</td>
-      <td>0.0</td>
       <td>3.500000e+05</td>
       <td>88.059701</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>max</th>
@@ -16053,9 +16011,9 @@ dtype: bool</pre>
       <td>44169.000000</td>
       <td>95.990000</td>
       <td>1.000000</td>
-      <td>0.0</td>
       <td>7.500000e+06</td>
       <td>98.798799</td>
+      <td>0.0</td>
     </tr>
   </tbody>
 </table>
@@ -16070,7 +16028,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[268]:</div>
+<div class="prompt input_prompt">In&nbsp;[908]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">multiAAA</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -16086,7 +16044,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[268]:</div>
+<div class="prompt output_prompt">Out[908]:</div>
 
 
 
@@ -16119,9 +16077,9 @@ dtype: bool</pre>
       <th>median_playtime</th>
       <th>price</th>
       <th>Sexual-content</th>
-      <th>multiplayer</th>
       <th>corrected_owners</th>
       <th>total_ratings</th>
+      <th>multiplayer</th>
     </tr>
   </thead>
   <tbody>
@@ -16137,9 +16095,9 @@ dtype: bool</pre>
       <td>211.000000</td>
       <td>211.000000</td>
       <td>211.000000</td>
-      <td>211.0</td>
       <td>2.110000e+02</td>
       <td>211.000000</td>
+      <td>211.0</td>
     </tr>
     <tr>
       <th>mean</th>
@@ -16153,9 +16111,9 @@ dtype: bool</pre>
       <td>1778.938389</td>
       <td>33.817441</td>
       <td>0.009479</td>
-      <td>1.0</td>
       <td>1.094431e+06</td>
       <td>71.757962</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>std</th>
@@ -16169,9 +16127,9 @@ dtype: bool</pre>
       <td>7282.897912</td>
       <td>7.547786</td>
       <td>0.097126</td>
-      <td>0.0</td>
       <td>5.355928e+06</td>
       <td>14.670933</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>min</th>
@@ -16185,9 +16143,9 @@ dtype: bool</pre>
       <td>0.000000</td>
       <td>24.900000</td>
       <td>0.000000</td>
-      <td>1.0</td>
       <td>1.000000e+04</td>
       <td>26.682692</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>25%</th>
@@ -16201,9 +16159,9 @@ dtype: bool</pre>
       <td>0.000000</td>
       <td>29.990000</td>
       <td>0.000000</td>
-      <td>1.0</td>
       <td>1.000000e+04</td>
       <td>62.713182</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>50%</th>
@@ -16217,9 +16175,9 @@ dtype: bool</pre>
       <td>215.000000</td>
       <td>30.990000</td>
       <td>0.000000</td>
-      <td>1.0</td>
       <td>1.500000e+05</td>
       <td>73.256452</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>75%</th>
@@ -16233,9 +16191,9 @@ dtype: bool</pre>
       <td>1544.000000</td>
       <td>39.990000</td>
       <td>0.000000</td>
-      <td>1.0</td>
       <td>7.500000e+05</td>
       <td>83.738994</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>max</th>
@@ -16249,9 +16207,9 @@ dtype: bool</pre>
       <td>86148.000000</td>
       <td>69.990000</td>
       <td>1.000000</td>
-      <td>1.0</td>
       <td>7.500000e+07</td>
       <td>95.715250</td>
+      <td>1.0</td>
     </tr>
   </tbody>
 </table>
@@ -16264,9 +16222,19 @@ dtype: bool</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Per avaluar la popularitat d'un joc farem servir les columnes corrected_owners i total_ratings que són les que tenen la informació sobre el numero de propietaris d'un joc i la quantitat de valoracions que ha rebut. Fem servir total_ratings enlloc dels estrictament positius perquè hi ha moltes valoracions negatives que es fan com a protesta per la no inclusió d'opcions a un joc, com poden ser idiomes diferents de l'anglès, i ens ha semblat que era millor seguir la dita sobre que es millor que es parli malament d'alguna cosa que no es parli en cap cas, sobretot en el cas d'steam on escriure una valoració és una activitat minoritària comparat amb el nombre de jugadors totals.</p>
+<p>Per tant, ara mirarem els probplots per a total_ratings i corrected_owners per les dues categories de jocs que estem estudiant. Encara que algunes d'elles estan a prop de seguir una distribució normal sembla que en cap cas ho fan.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[269]:</div>
+<div class="prompt input_prompt">In&nbsp;[909]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -16304,7 +16272,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[270]:</div>
+<div class="prompt input_prompt">In&nbsp;[910]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -16342,7 +16310,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[271]:</div>
+<div class="prompt input_prompt">In&nbsp;[911]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -16380,7 +16348,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[272]:</div>
+<div class="prompt input_prompt">In&nbsp;[912]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -16416,9 +16384,18 @@ dtype: bool</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El test de Shapiro ens diu que les dades no segueixen una distribució normal.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[273]:</div>
+<div class="prompt input_prompt">In&nbsp;[913]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">results_single</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">shapiro</span><span class="p">(</span><span class="n">singleAAA</span><span class="p">[</span><span class="s2">&quot;corrected_owners&quot;</span><span class="p">])</span>
@@ -16453,7 +16430,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[274]:</div>
+<div class="prompt input_prompt">In&nbsp;[914]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">results_single_tr</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">shapiro</span><span class="p">(</span><span class="n">singleAAA</span><span class="p">[</span><span class="s2">&quot;total_ratings&quot;</span><span class="p">])</span>
@@ -16496,9 +16473,18 @@ dtype: bool</pre>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Com el valor p del test de Levene és alta rebutgem la hipòtesi nul·la i podem dir que les variàncies són homogènies.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[275]:</div>
+<div class="prompt input_prompt">In&nbsp;[915]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#scipy.stats.fligner only works with same length</span>
@@ -16516,7 +16502,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[275]:</div>
+<div class="prompt output_prompt">Out[915]:</div>
 
 
 
@@ -16533,7 +16519,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[276]:</div>
+<div class="prompt input_prompt">In&nbsp;[916]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">equal_variances_tr</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">levene</span><span class="p">(</span><span class="n">singleAAA</span><span class="p">[</span><span class="s2">&quot;total_ratings&quot;</span><span class="p">],</span> <span class="n">multiAAA</span><span class="p">[</span><span class="s2">&quot;total_ratings&quot;</span><span class="p">])</span>
@@ -16550,7 +16536,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[276]:</div>
+<div class="prompt output_prompt">Out[916]:</div>
 
 
 
@@ -16575,12 +16561,23 @@ dtype: bool</pre>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.3.-Aplicaci&#243;-de-proves-estad&#237;stiques-per-comparar-els-grups-de-dades.-En-funci&#243;-de-les-dades-i-de-l&#8217;objectiu-de-l&#8217;estudi,-aplicar-proves-de-contrast-d&#8217;hip&#242;tesis,-correlacions,-regressions,-etc.-Aplicar-almenys-tres-m&#232;todes-d&#8217;an&#224;lisi-diferents.">4.3. Aplicaci&#243; de proves estad&#237;stiques per comparar els grups de dades. En funci&#243; de les dades i de l&#8217;objectiu de l&#8217;estudi, aplicar proves de contrast d&#8217;hip&#242;tesis, correlacions, regressions, etc. Aplicar almenys tres m&#232;todes d&#8217;an&#224;lisi diferents.<a class="anchor-link" href="#4.3.-Aplicaci&#243;-de-proves-estad&#237;stiques-per-comparar-els-grups-de-dades.-En-funci&#243;-de-les-dades-i-de-l&#8217;objectiu-de-l&#8217;estudi,-aplicar-proves-de-contrast-d&#8217;hip&#242;tesis,-correlacions,-regressions,-etc.-Aplicar-almenys-tres-m&#232;todes-d&#8217;an&#224;lisi-diferents.">&#182;</a></h3><p>La primera prova estadística que realitzarem serà la prova U de Mann-Whitney. Aquesta ens dirà si una variable aleatòria és més gran estocàsticament que l'altre. Hem fet servir la versió less per a confirmar la hipòtesi sobre que els jocs sense multijugador són més populars que els que no en tenen, per corrected_owners ha estat així ja que el valor p ha estat menor a l'estàndard 0.05 cosa que confirma que la nostra hipòtesi. En canvi, per a total_ratings el valor de p és molt elevat rebutjant la nostra hipòtesi. Per tant, podem dir que tenir multijugador incrementa les ventes d'un joc sobre els que no en tenen, però no podem dir el mateix sobre la seva acollida entre el públic o valoració.</p>
+<p><a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mannwhitneyu.html">https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mannwhitneyu.html</a>
+<a href="https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test">https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test</a></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[277]:</div>
+<div class="prompt input_prompt">In&nbsp;[917]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">stats</span><span class="o">.</span><span class="n">mannwhitneyu</span><span class="p">(</span><span class="n">singleAAA</span><span class="p">[</span><span class="s1">&#39;corrected_owners&#39;</span><span class="p">],</span> <span class="n">multiAAA</span><span class="p">[</span><span class="s1">&#39;corrected_owners&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">stats</span><span class="o">.</span><span class="n">mannwhitneyu</span><span class="p">(</span><span class="n">singleAAA</span><span class="p">[</span><span class="s1">&#39;corrected_owners&#39;</span><span class="p">],</span> <span class="n">multiAAA</span><span class="p">[</span><span class="s1">&#39;corrected_owners&#39;</span><span class="p">],</span> <span class="n">alternative</span> <span class="o">=</span> <span class="s1">&#39;less&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -16593,7 +16590,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[277]:</div>
+<div class="prompt output_prompt">Out[917]:</div>
 
 
 
@@ -16610,10 +16607,10 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[278]:</div>
+<div class="prompt input_prompt">In&nbsp;[918]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">stats</span><span class="o">.</span><span class="n">mannwhitneyu</span><span class="p">(</span><span class="n">singleAAA</span><span class="p">[</span><span class="s1">&#39;total_ratings&#39;</span><span class="p">],</span> <span class="n">multiAAA</span><span class="p">[</span><span class="s1">&#39;total_ratings&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">stats</span><span class="o">.</span><span class="n">mannwhitneyu</span><span class="p">(</span><span class="n">singleAAA</span><span class="p">[</span><span class="s1">&#39;total_ratings&#39;</span><span class="p">],</span> <span class="n">multiAAA</span><span class="p">[</span><span class="s1">&#39;total_ratings&#39;</span><span class="p">],</span> <span class="n">alternative</span> <span class="o">=</span> <span class="s1">&#39;less&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -16626,13 +16623,13 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[278]:</div>
+<div class="prompt output_prompt">Out[918]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>MannwhitneyuResult(statistic=26417.0, pvalue=3.5183486308154707e-06)</pre>
+<pre>MannwhitneyuResult(statistic=42158.0, pvalue=0.9999964910733081)</pre>
 </div>
 
 </div>
@@ -16640,16 +16637,24 @@ dtype: bool</pre>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La segona prova estadística que realitzarem serà la correlació de Pearson. Sembla que pels jocs d'un jugador tenir un requisit d'edat correla més positivament amb el nombre de propietaris que pels jocs multijugador. El preu correla de forma lleugerament negativa amb el nombre de propietaris, cosa que té sentit jocs que fa més anys que són a la venta han baixat de preu i porten anys de ventes acumulades. Podem veure també una forta correlació entre els ratings positius i negatius i el nombre de propietaris, la correlació dels comentaris negatius als jocs multijugador és pràcticament igual a 1 i en canvi als jocs d'un jugador voreja el 0.5. Això sembla indicar que hi ha jugadors que potser frustrats per les habilitats dels altres o els problemes de connexió comenten més negativament a jocs amb multijugador. Si total_ratings no correla tan clarament es perquè vam normalitzar-ne els valors, però veient com ho fan les variables originals ja n'hi ha prou. El nombre d'hores jugades mitjà i la mediana correlen més fortament pels jocs multijugador.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[279]:</div>
+<div class="prompt input_prompt">In&nbsp;[919]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># stats.pearsonr(a, b)</span>
 <span class="n">corr_singleAAA</span> <span class="o">=</span> <span class="n">singleAAA</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span><span class="s1">&#39;pearson&#39;</span><span class="p">)</span>
 <span class="n">corr_singleAAA</span><span class="p">[</span><span class="s1">&#39;corrected_owners&#39;</span><span class="p">]</span>
-<span class="c1"># corr_singleAAA[&#39;corrected_owners&#39;]</span>
 </pre></div>
 
 </div>
@@ -16662,7 +16667,7 @@ dtype: bool</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[279]:</div>
+<div class="prompt output_prompt">Out[919]:</div>
 
 
 
@@ -16678,9 +16683,9 @@ average_playtime    0.126794
 median_playtime     0.047033
 price              -0.012109
 Sexual-content     -0.080900
-multiplayer        NaN      
 corrected_owners    1.000000
 total_ratings       0.150790
+multiplayer        NaN      
 Name: corrected_owners, dtype: float64</pre>
 </div>
 
@@ -16692,7 +16697,7 @@ Name: corrected_owners, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[280]:</div>
+<div class="prompt input_prompt">In&nbsp;[920]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">corr_multiAAA</span> <span class="o">=</span> <span class="n">multiAAA</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span><span class="s1">&#39;pearson&#39;</span><span class="p">)</span>
@@ -16709,7 +16714,7 @@ Name: corrected_owners, dtype: float64</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[280]:</div>
+<div class="prompt output_prompt">Out[920]:</div>
 
 
 
@@ -16725,9 +16730,9 @@ average_playtime    0.320008
 median_playtime     0.108496
 price              -0.057991
 Sexual-content     -0.019030
-multiplayer        NaN      
 corrected_owners    1.000000
 total_ratings      -0.058602
+multiplayer        NaN      
 Name: corrected_owners, dtype: float64</pre>
 </div>
 
@@ -16737,13 +16742,23 @@ Name: corrected_owners, dtype: float64</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La darrera prova estadística serà la regressió lineal. La cridarem combinant diverses combinacions de variables independents i fent servir sempre corrected_owners com a variable dependent. Els resultats pels jocs purament d'un jugador són bons, mostrant valors per r-squared al voltant de 0.6.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[281]:</div>
+<div class="prompt input_prompt">In&nbsp;[921]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">singleAAA</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">singleAAA</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;datetime64&quot;</span><span class="p">)</span>
-<span class="n">hist1</span> <span class="o">=</span> <span class="n">singleAAA</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">sm</span>
+<span class="n">result_tr_p</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="s2">&quot;corrected_owners ~ positive_ratings + negative_ratings + price -1&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">singleAAA</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p</span><span class="o">.</span><span class="n">params</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -16759,16 +16774,486 @@ Name: corrected_owners, dtype: float64</pre>
 <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Users\Kaworu\Anaconda3\lib\site-packages\ipykernel_launcher.py:1: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-  &#34;&#34;&#34;Entry point for launching an IPython kernel.
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>positive_ratings    42.013965  
+negative_ratings    89.270871  
+price               2392.679229
+dtype: float64
 </pre>
 </div>
 </div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[922]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       corrected_owners   R-squared:                       0.660
+Model:                            OLS   Adj. R-squared:                  0.657
+Method:                 Least Squares   F-statistic:                     208.5
+Date:                Wed, 08 Jan 2020   Prob (F-statistic):           3.94e-75
+Time:                        04:40:24   Log-Likelihood:                -4746.4
+No. Observations:                 325   AIC:                             9499.
+Df Residuals:                     322   BIC:                             9510.
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          t      P&gt;|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+positive_ratings    42.0140      2.522     16.659      0.000      37.052      46.976
+negative_ratings    89.2709     18.068      4.941      0.000      53.725     124.817
+price             2392.6792    934.931      2.559      0.011     553.335    4232.023
+==============================================================================
+Omnibus:                      487.256   Durbin-Watson:                   1.896
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            99821.225
+Skew:                           7.546   Prob(JB):                         0.00
+Kurtosis:                      87.520   Cond. No.                         444.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[923]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result_tr_p_avg</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="s2">&quot;corrected_owners ~ positive_ratings + negative_ratings + price + average_playtime -1&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">singleAAA</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p_avg</span><span class="o">.</span><span class="n">params</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>positive_ratings    41.935163  
+negative_ratings    88.867386  
+price               2315.848232
+average_playtime    3.818462   
+dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[924]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p_avg</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       corrected_owners   R-squared:                       0.660
+Model:                            OLS   Adj. R-squared:                  0.656
+Method:                 Least Squares   F-statistic:                     156.0
+Date:                Wed, 08 Jan 2020   Prob (F-statistic):           5.79e-74
+Time:                        04:40:24   Log-Likelihood:                -4746.3
+No. Observations:                 325   AIC:                             9501.
+Df Residuals:                     321   BIC:                             9516.
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          t      P&gt;|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+positive_ratings    41.9352      2.535     16.544      0.000      36.948      46.922
+negative_ratings    88.8674     18.126      4.903      0.000      53.206     124.529
+price             2315.8482    959.758      2.413      0.016     427.638    4204.058
+average_playtime     3.8185     10.505      0.363      0.716     -16.849      24.486
+==============================================================================
+Omnibus:                      487.497   Durbin-Watson:                   1.894
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           100151.009
+Skew:                           7.552   Prob(JB):                         0.00
+Kurtosis:                      87.662   Cond. No.                         456.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[925]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result_tr_p_median</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="s2">&quot;corrected_owners ~ positive_ratings + negative_ratings + price + median_playtime -1&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">singleAAA</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p_median</span><span class="o">.</span><span class="n">params</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>positive_ratings    42.044182  
+negative_ratings    89.767583  
+price               2501.524708
+median_playtime    -4.936859   
+dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[926]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p_median</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       corrected_owners   R-squared:                       0.660
+Model:                            OLS   Adj. R-squared:                  0.656
+Method:                 Least Squares   F-statistic:                     156.1
+Date:                Wed, 08 Jan 2020   Prob (F-statistic):           5.55e-74
+Time:                        04:40:24   Log-Likelihood:                -4746.3
+No. Observations:                 325   AIC:                             9501.
+Df Residuals:                     321   BIC:                             9516.
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          t      P&gt;|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+positive_ratings    42.0442      2.526     16.645      0.000      37.075      47.014
+negative_ratings    89.7676     18.121      4.954      0.000      54.116     125.419
+price             2501.5247    964.689      2.593      0.010     603.613    4399.437
+median_playtime     -4.9369     10.579     -0.467      0.641     -25.750      15.876
+==============================================================================
+Omnibus:                      487.118   Durbin-Watson:                   1.899
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            99700.978
+Skew:                           7.542   Prob(JB):                         0.00
+Kurtosis:                      87.469   Cond. No.                         458.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pels jocs multijugador el valor de r-squared puja fins a 0.95. El preu clarament i la valoració negativa en segon terme són definitòries dels models de regressió lineal que hem construït.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[927]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result_tr_p_avg_multi</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="s2">&quot;corrected_owners ~ positive_ratings + negative_ratings + price + average_playtime -1&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">multiAAA</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p_avg_multi</span><span class="o">.</span><span class="n">params</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>positive_ratings   -5.732444   
+negative_ratings    152.500131 
+price               4751.275363
+average_playtime    8.551587   
+dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[928]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p_avg_multi</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       corrected_owners   R-squared:                       0.956
+Model:                            OLS   Adj. R-squared:                  0.955
+Method:                 Least Squares   F-statistic:                     1132.
+Date:                Wed, 08 Jan 2020   Prob (F-statistic):          1.97e-139
+Time:                        04:40:24   Log-Likelihood:                -3242.2
+No. Observations:                 211   AIC:                             6492.
+Df Residuals:                     207   BIC:                             6506.
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          t      P&gt;|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+positive_ratings    -5.7324      3.914     -1.465      0.145     -13.449       1.984
+negative_ratings   152.5001      5.035     30.287      0.000     142.573     162.427
+price             4751.2754   2474.492      1.920      0.056    -127.161    9629.712
+average_playtime     8.5516     15.289      0.559      0.577     -21.590      38.693
+==============================================================================
+Omnibus:                      135.432   Durbin-Watson:                   1.606
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             3114.851
+Skew:                          -1.980   Prob(JB):                         0.00
+Kurtosis:                      21.401   Cond. No.                     1.85e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.85e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[929]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result_tr_p_median_multi</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="s2">&quot;corrected_owners ~ positive_ratings + negative_ratings + price + median_playtime -1&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">multiAAA</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p_median_multi</span><span class="o">.</span><span class="n">params</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>positive_ratings   -5.315441   
+negative_ratings    152.380671 
+price               4928.992213
+median_playtime     2.973906   
+dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[930]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p_median_multi</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       corrected_owners   R-squared:                       0.956
+Model:                            OLS   Adj. R-squared:                  0.955
+Method:                 Least Squares   F-statistic:                     1131.
+Date:                Wed, 08 Jan 2020   Prob (F-statistic):          2.22e-139
+Time:                        04:40:24   Log-Likelihood:                -3242.3
+No. Observations:                 211   AIC:                             6493.
+Df Residuals:                     207   BIC:                             6506.
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          t      P&gt;|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+positive_ratings    -5.3154      3.840     -1.384      0.168     -12.886       2.256
+negative_ratings   152.3807      5.040     30.232      0.000     142.444     162.318
+price             4928.9922   2461.975      2.002      0.047      75.232    9782.753
+median_playtime      2.9739     10.960      0.271      0.786     -18.633      24.581
+==============================================================================
+Omnibus:                      135.693   Durbin-Watson:                   1.596
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             3118.313
+Skew:                          -1.986   Prob(JB):                         0.00
+Kurtosis:                      21.409   Cond. No.                     1.84e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.84e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="5.-Representaci&#243;-dels-resultats-a-partir-de-taules-i-gr&#224;fiques.">5. Representaci&#243; dels resultats a partir de taules i gr&#224;fiques.<a class="anchor-link" href="#5.-Representaci&#243;-dels-resultats-a-partir-de-taules-i-gr&#224;fiques.">&#182;</a></h2><p>Fins ara ja hem representat les dades en diferents gràfiques i taules, però no hem tractat encara com el temps influeix en el nombre de propietaris. Per tant farem això abans d'arribar a les conclusions.</p>
+<p>Primer mostrarem uns histogrames mostrant el nombre de llançaments per any. Veien les gràfiques sembla clar que al voltant de 2014-2015 el nombre de llançaments AA o AAA a la plataforma va començar a incrementar clarament.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[931]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">singleAAA</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">singleAAA</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;datetime64&quot;</span><span class="p">)</span>
+<span class="n">hist1</span> <span class="o">=</span> <span class="n">singleAAA</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
 
 <div class="output_area">
 
@@ -16791,7 +17276,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[282]:</div>
+<div class="prompt input_prompt">In&nbsp;[932]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">multiAAA</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">multiAAA</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;datetime64&quot;</span><span class="p">)</span>
@@ -16805,22 +17290,6 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="output_wrapper">
 <div class="output">
 
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Users\Kaworu\Anaconda3\lib\site-packages\ipykernel_launcher.py:1: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-  &#34;&#34;&#34;Entry point for launching an IPython kernel.
-</pre>
-</div>
-</div>
 
 <div class="output_area">
 
@@ -16841,554 +17310,18 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[283]:</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">sm</span>
-<span class="n">result_tr_p</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="s2">&quot;corrected_owners ~ total_ratings + price&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">steam_AAA_no</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p</span><span class="o">.</span><span class="n">params</span><span class="p">)</span>
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ara mostrarem el nombre de propietaris total i mitjà per any i tipus de joc. Les gràfiques mostren un comportament més erràtic pels jocs amb multijugador.</p>
 
 </div>
 </div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Intercept        1.612436e+06
-total_ratings   -6.922720e+03
-price           -1.333895e+04
-dtype: float64
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[284]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>                            OLS Regression Results                            
-==============================================================================
-Dep. Variable:       corrected_owners   R-squared:                       0.002
-Model:                            OLS   Adj. R-squared:                 -0.002
-Method:                 Least Squares   F-statistic:                    0.5495
-Date:                Wed, 08 Jan 2020   Prob (F-statistic):              0.578
-Time:                        02:13:45   Log-Likelihood:                -8826.7
-No. Observations:                 536   AIC:                         1.766e+04
-Df Residuals:                     533   BIC:                         1.767e+04
-Df Model:                           2                                         
-Covariance Type:            nonrobust                                         
-=================================================================================
-                    coef    std err          t      P&gt;|t|      [0.025      0.975]
----------------------------------------------------------------------------------
-Intercept      1.612e+06   9.52e+05      1.695      0.091   -2.57e+05    3.48e+06
-total_ratings -6922.7203   9785.308     -0.707      0.480   -2.61e+04    1.23e+04
-price         -1.334e+04    1.7e+04     -0.784      0.434   -4.68e+04    2.01e+04
-==============================================================================
-Omnibus:                     1227.539   Durbin-Watson:                   1.999
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):          3658105.695
-Skew:                          19.004   Prob(JB):                         0.00
-Kurtosis:                     405.928   Cond. No.                         535.
-==============================================================================
-
-Warnings:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[285]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result_tr_p_avg</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="s2">&quot;corrected_owners ~ total_ratings + price + average_playtime&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">steam_AAA_no</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p_avg</span><span class="o">.</span><span class="n">params</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Intercept           1.605728e+06
-total_ratings      -7.943296e+03
-price              -1.965178e+04
-average_playtime    2.381586e+02
-dtype: float64
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[286]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p_avg</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>                            OLS Regression Results                            
-==============================================================================
-Dep. Variable:       corrected_owners   R-squared:                       0.086
-Model:                            OLS   Adj. R-squared:                  0.081
-Method:                 Least Squares   F-statistic:                     16.74
-Date:                Wed, 08 Jan 2020   Prob (F-statistic):           2.10e-10
-Time:                        02:13:45   Log-Likelihood:                -8803.1
-No. Observations:                 536   AIC:                         1.761e+04
-Df Residuals:                     532   BIC:                         1.763e+04
-Df Model:                           3                                         
-Covariance Type:            nonrobust                                         
-====================================================================================
-                       coef    std err          t      P&gt;|t|      [0.025      0.975]
-------------------------------------------------------------------------------------
-Intercept         1.606e+06   9.11e+05      1.762      0.079   -1.85e+05     3.4e+06
-total_ratings    -7943.2960   9373.421     -0.847      0.397   -2.64e+04    1.05e+04
-price            -1.965e+04   1.63e+04     -1.204      0.229   -5.17e+04    1.24e+04
-average_playtime   238.1586     34.019      7.001      0.000     171.331     304.986
-==============================================================================
-Omnibus:                     1172.988   Durbin-Watson:                   2.005
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):          2903364.266
-Skew:                          17.107   Prob(JB):                         0.00
-Kurtosis:                     361.930   Cond. No.                     2.80e+04
-==============================================================================
-
-Warnings:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large, 2.8e+04. This might indicate that there are
-strong multicollinearity or other numerical problems.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[287]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result_tr_p_median</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="s2">&quot;corrected_owners ~ total_ratings + price + median_playtime&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">steam_AAA_no</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p_median</span><span class="o">.</span><span class="n">params</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Intercept          1.600243e+06
-total_ratings     -7.072343e+03
-price             -1.526985e+04
-median_playtime    7.459232e+01
-dtype: float64
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[288]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">result_tr_p_median</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>                            OLS Regression Results                            
-==============================================================================
-Dep. Variable:       corrected_owners   R-squared:                       0.014
-Model:                            OLS   Adj. R-squared:                  0.009
-Method:                 Least Squares   F-statistic:                     2.562
-Date:                Wed, 08 Jan 2020   Prob (F-statistic):             0.0541
-Time:                        02:13:45   Log-Likelihood:                -8823.4
-No. Observations:                 536   AIC:                         1.765e+04
-Df Residuals:                     532   BIC:                         1.767e+04
-Df Model:                           3                                         
-Covariance Type:            nonrobust                                         
-===================================================================================
-                      coef    std err          t      P&gt;|t|      [0.025      0.975]
------------------------------------------------------------------------------------
-Intercept          1.6e+06   9.47e+05      1.690      0.092   -2.59e+05    3.46e+06
-total_ratings   -7072.3429   9734.691     -0.727      0.468   -2.62e+04    1.21e+04
-price           -1.527e+04   1.69e+04     -0.901      0.368   -4.86e+04     1.8e+04
-median_playtime    74.5923     29.087      2.564      0.011      17.454     131.731
-==============================================================================
-Omnibus:                     1218.171   Durbin-Watson:                   1.998
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):          3500979.383
-Skew:                          18.670   Prob(JB):                         0.00
-Kurtosis:                     397.165   Cond. No.                     3.35e+04
-==============================================================================
-
-Warnings:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large, 3.35e+04. This might indicate that there are
-strong multicollinearity or other numerical problems.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[289]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">multiAAA</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">datetime64</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;int64&quot;</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">multiAAA</span><span class="p">[</span><span class="s2">&quot;corrected_owners&quot;</span><span class="p">]))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[289]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 1.        , -0.02344821],
-       [-0.02344821,  1.        ]])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[290]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">singleAAA_new</span> <span class="o">=</span> <span class="n">singleAAA</span><span class="p">[</span><span class="n">singleAAA</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="s1">&#39;2015-01-01&#39;</span><span class="p">]</span>
-<span class="n">singleAAA_old</span> <span class="o">=</span> <span class="n">singleAAA</span><span class="p">[</span><span class="n">singleAAA</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="s1">&#39;2015-01-01&#39;</span><span class="p">]</span>
-<span class="n">multiAAA_new</span> <span class="o">=</span> <span class="n">multiAAA</span><span class="p">[</span><span class="n">multiAAA</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="s1">&#39;2015-01-01&#39;</span><span class="p">]</span>
-<span class="n">multiAAA_old</span> <span class="o">=</span> <span class="n">multiAAA</span><span class="p">[</span><span class="n">multiAAA</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="s1">&#39;2015-01-01&#39;</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[291]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">singleAAA_new</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[291]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>count     293                
-unique    236                
-top       2018-02-27 00:00:00
-freq      4                  
-first     2015-02-09 00:00:00
-last      2019-04-23 00:00:00
-Name: release_date, dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[292]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">singleAAA_old</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">singleAAA_new</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">multiAAA_old</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">multiAAA_new</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">]))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>32
-293
-38
-173
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[293]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">singleAAA_new</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">datetime64</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;int64&quot;</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">singleAAA_new</span><span class="p">[</span><span class="s2">&quot;corrected_owners&quot;</span><span class="p">]))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[293]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 1.        , -0.13321266],
-       [-0.13321266,  1.        ]])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[294]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">singleAAA_old</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">datetime64</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;int64&quot;</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">singleAAA_old</span><span class="p">[</span><span class="s2">&quot;corrected_owners&quot;</span><span class="p">]))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[294]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 1.        , -0.24636556],
-       [-0.24636556,  1.        ]])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[295]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">multiAAA_new</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">datetime64</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;int64&quot;</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">multiAAA_new</span><span class="p">[</span><span class="s2">&quot;corrected_owners&quot;</span><span class="p">]))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[295]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 1.        , -0.02306103],
-       [-0.02306103,  1.        ]])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[296]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">multiAAA_old</span><span class="p">[</span><span class="s2">&quot;release_date&quot;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">datetime64</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;int64&quot;</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">multiAAA_old</span><span class="p">[</span><span class="s2">&quot;corrected_owners&quot;</span><span class="p">]))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[296]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[ 1.       , -0.2537614],
-       [-0.2537614,  1.       ]])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[297]:</div>
+<div class="prompt input_prompt">In&nbsp;[933]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">multiAAA_yearly_sum</span> <span class="o">=</span> <span class="n">multiAAA</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;release_date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -17405,13 +17338,13 @@ Name: release_date, dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[297]:</div>
+<div class="prompt output_prompt">Out[933]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d2a4bd8d0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d2e418f60&gt;</pre>
 </div>
 
 </div>
@@ -17437,7 +17370,7 @@ Name: release_date, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[298]:</div>
+<div class="prompt input_prompt">In&nbsp;[934]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">multiAAA_yearly_mean</span> <span class="o">=</span> <span class="n">multiAAA</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;release_date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -17454,13 +17387,13 @@ Name: release_date, dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[298]:</div>
+<div class="prompt output_prompt">Out[934]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d245e4198&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d2daa2cf8&gt;</pre>
 </div>
 
 </div>
@@ -17486,7 +17419,7 @@ Name: release_date, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[299]:</div>
+<div class="prompt input_prompt">In&nbsp;[935]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">singleAAA_yearly_sum</span> <span class="o">=</span> <span class="n">singleAAA</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;release_date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -17503,13 +17436,13 @@ Name: release_date, dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[299]:</div>
+<div class="prompt output_prompt">Out[935]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d25ab4f60&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d2d9d1b70&gt;</pre>
 </div>
 
 </div>
@@ -17535,7 +17468,7 @@ Name: release_date, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[300]:</div>
+<div class="prompt input_prompt">In&nbsp;[936]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">singleAAA_yearly_mean</span> <span class="o">=</span> <span class="n">singleAAA</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;release_date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -17552,13 +17485,13 @@ Name: release_date, dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[300]:</div>
+<div class="prompt output_prompt">Out[936]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d2a31b668&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d2eaaf9b0&gt;</pre>
 </div>
 
 </div>
@@ -17582,9 +17515,18 @@ Name: release_date, dtype: object</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sobre el preu podem veure com s'ha mantingut estable pels jocs d'un jugador, amb un pic molt clar a l'any 2012 i que en canvi pels jocs multijugador si s'ha vist un increment encara que l'any 2012 també va tenir uns llançaments atípicament cars.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[301]:</div>
+<div class="prompt input_prompt">In&nbsp;[937]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">singleAAA_yearly_mean</span><span class="p">[</span><span class="s2">&quot;price&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
@@ -17600,13 +17542,13 @@ Name: release_date, dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[301]:</div>
+<div class="prompt output_prompt">Out[937]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d25aa4208&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d2eae2c50&gt;</pre>
 </div>
 
 </div>
@@ -17632,7 +17574,7 @@ Name: release_date, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[302]:</div>
+<div class="prompt input_prompt">In&nbsp;[938]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">multiAAA_yearly_mean</span><span class="p">[</span><span class="s2">&quot;price&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
@@ -17648,13 +17590,13 @@ Name: release_date, dtype: object</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[302]:</div>
+<div class="prompt output_prompt">Out[938]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d25977710&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21d2eb43780&gt;</pre>
 </div>
 
 </div>
@@ -17677,6 +17619,24 @@ Name: release_date, dtype: object</pre>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="6.-Resoluci&#243;-del-problema.-A-partir-dels-resultats-obtinguts,-quines-s&#243;n-les-conclusions?-Els-resultats-permeten-respondre-al-problema?">6. Resoluci&#243; del problema. A partir dels resultats obtinguts, quines s&#243;n les conclusions? Els resultats permeten respondre al problema?<a class="anchor-link" href="#6.-Resoluci&#243;-del-problema.-A-partir-dels-resultats-obtinguts,-quines-s&#243;n-les-conclusions?-Els-resultats-permeten-respondre-al-problema?">&#182;</a></h2><p>Les conclusions són que els jocs AA o AAA amb un preu major de 24 lliures esterlines a la plataforma de venta de jocs online Steam tenen més propietaris si inclouen una opció joc multijugador. No podem confirmar que la seva valoració entre el públic sigui diferent.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="7.-Codi:-Cal-adjuntar-el-codi,-preferiblement-en-R,-amb-el-que-s&#8217;ha-realitzat-la-neteja,-an&#224;lisi-i-representaci&#243;-de-les-dades.-Si-ho-preferiu,-tamb&#233;-podeu-treballar-en-Python.">7. Codi: Cal adjuntar el codi, preferiblement en R, amb el que s&#8217;ha realitzat la neteja, an&#224;lisi i representaci&#243; de les dades. Si ho preferiu, tamb&#233; podeu treballar en Python.<a class="anchor-link" href="#7.-Codi:-Cal-adjuntar-el-codi,-preferiblement-en-R,-amb-el-que-s&#8217;ha-realitzat-la-neteja,-an&#224;lisi-i-representaci&#243;-de-les-dades.-Si-ho-preferiu,-tamb&#233;-podeu-treballar-en-Python.">&#182;</a></h2><p>El codi d'aquesta pràctica s'ha desenvolupat completament en Python 3 fent servir un únic jupyter-notebook.</p>
+
+</div>
+</div>
 </div>
     </div>
   </div>
